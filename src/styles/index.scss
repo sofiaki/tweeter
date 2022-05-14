@@ -1,7 +1,149 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic??family=Open+Sans:wght@500&display=swap);
+
+$font-size: 1rem;
+$font-family: 'Roboto', sans-serif;
+$background-color: #fcfcfc;
+$font-color: #2d2e2e;
+$border-color: rgb(213, 213, 224);
+
+html {
+  font-size: $font-size;
+  font-family: $font-family;
+  background: $background-color;
+  color: $font-color;
 }
 
-@import 'variables';
-@import 'scaffolding';
+body {
+  margin: 0;
+}
+*{
+    box-sizing: border-box;
+
+}
+a{
+  cursor: pointer;
+}
+.hover:hover{
+  background-color: #ebf0f0;
+}
+.button{
+  padding: 0.5rem;
+  border-radius: 1000px;
+}
+.flex{
+  display: flex;
+}
+.space-between{
+  justify-content: space-between;
+}
+.justify-center{
+justify-content: center;
+}
+.justify-end{
+justify-content: flex-end;
+}
+.justify-start{
+justify-content: flex-end;
+}
+.align-center{
+align-items: flex-center;
+}
+.align-end{
+align-items: flex-end;
+}
+.center {
+margin: auto;
+}
+
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.sides{
+  width: 30%;
+  min-height: 100vh;
+}
+.sides:first-child{
+border-right: 1px solid $border-color;
+}
+.sides:last-child{
+border-left: 1px solid $border-color;
+}
+.center{
+  width: 40%;
+}
+.tweet{
+  height: 200px;
+  border-bottom: 1px solid $border-color;
+}
+.home{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.home h2{
+  padding: 0;
+  margin: 0;
+}
+
+.home svg{
+  height: inherit;
+  width: 20px;
+  height: 20px;
+}
+.tweetArea{
+  padding: 0 10px;
+}
+.tweetArea img{
+  border-radius: 999px;
+}
+.tweetInput{
+  height:48px;
+
+}
+.tweetInput input{
+  padding-left: 10px;
+  border: none;
+  height: 48px;
+  line-height: 48px;
+  font-size: 1.2em;
+}
+input{
+  border: none;
+  outline: none;
+}
+.tweetButtons{
+  height: 30px;
+}
+.tweetButtons svg{
+  color:#2d2e2e;
+  fill:#6ba7e7;
+  width: 20px;
+}
+.tweetIcon{
+  width: 35px;
+  height: 35px;
+}
+.tweetButton{
+  padding: 0.6em;
+  border-radius: 9999px;
+  font-size: 1.05em;
+  border: none;
+  background-color: #539be7;
+  color:rgb(242, 242, 247);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.tweetButton:hover{
+  cursor: pointer;
+  background-color: #3680ce;
+}
+.tweets{
+  height: 100vh;
+}
+.tweetText{
+  padding: 5px;
+}
